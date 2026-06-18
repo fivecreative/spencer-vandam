@@ -36,7 +36,11 @@
 	
 	// ACF functionality
 	include_once(locate_template('includes/woocommerce.php'));
-	
+
+	// Quote mode – swaps WooCommerce "order/cart/checkout" language to quotes.
+	// To disable, comment out the line below.
+	include_once( locate_template( 'includes/quotes/loader.php' ) );
+
 	// ACF functionality
 	include_once(locate_template('includes/training.php'));
 	
